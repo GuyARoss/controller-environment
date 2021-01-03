@@ -1,15 +1,12 @@
 #!/usr/bin/env python3.8
 import cv2
-
-from datetime import datetime
-
-date = datetime.now().strftime("%y-%m-%d")
+import time
 
 def main():
     cam = cv2.VideoCapture(0)
-    cam.set(3, 1080)     
-    cam.set(4,720)     
-    cam.set(5, 30)      
+    cam.set(3, 1080)
+    cam.set(4,720)
+    cam.set(5, 30)
 
     while True:
         ret_val, img = cam.read()
@@ -20,7 +17,7 @@ def main():
             break
 
         if cv2.waitKey(1) == ord('p'):
-            cv2.imwrite(f"./menus/snap_{date}.png", img)
+            cv2.imwrite(f"./menus/snap_{time.time()}.png", img)
 
 
     cv2.destroyAllWindows()
