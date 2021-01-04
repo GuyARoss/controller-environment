@@ -3,13 +3,13 @@ import cv2
 import time
 
 def main():
-    cam = cv2.VideoCapture(0)
-    cam.set(3, 1080)
-    cam.set(4,720)
-    cam.set(5, 30)
+    cap = cv2.VideoCapture(0)
+    cap.set(3, 1080)
+    cap.set(4,720)
+    cap.set(5, 30)
 
     while True:
-        ret_val, img = cam.read()
+        ret_val, img = cap.read()
 
         cv2.imshow('output', img)
         
