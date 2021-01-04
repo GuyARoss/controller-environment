@@ -17,7 +17,7 @@ def main():
             break
 
         if cv2.waitKey(1) == ord('p'):
-            cv2.imwrite(f"./menus/snap_{time.time()}.png", img)
+            cv2.imwrite(f"./snaps/snap_{time.time()}.png", img)
 
 
     cv2.destroyAllWindows()
