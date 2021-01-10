@@ -5,18 +5,23 @@ from typing import NoReturn, List
 from model import Model
 from utils import average_prediction
 
-def predict_frame(frame: any, predictions: List[str] = []) -> str:
+def predict_frame(model: any, frame: any, predictions: List[str] = []) -> str:
     current_frame_prediction = model.predict(frame)
 
-    predictions.push(current_frame_prediction)
+    predictions.append(current_frame_prediction)
     if len(predictions) >= 20:
-        predictions = predictions.pop()
+        predictions.pop(1)
 
     return average_prediction(predictions)
 
-def main() -> NoReturn:
+def train_model() -> Model:
     model = Model()
-    model.train('../menu_dataset/training')
+    model.train('../../menu_dataset/training')
+
+    return model
+
+def main() -> NoReturn:
+    model = train_model()
     print("training complete")
 
     cap = cv2.VideoCapture(0)
@@ -29,7 +34,7 @@ def main() -> NoReturn:
     while True:
         ret_val, frame = cap.read()
         
-        frame_prediction = predict_frame(frame)
+        frame_prediction = predict_frame(model, frame, predictions=predictions)
         frame = cv2.putText(frame, frame_prediction, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
 
         if cv2.waitKey(1) == 27:

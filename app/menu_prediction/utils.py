@@ -19,3 +19,4 @@ def average_prediction(predictions: List[str], limit: int = 5) -> str:
             best_prediction = (prediction, counted_predictions[prediction])
 
     return best_prediction[0]
+    
