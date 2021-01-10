@@ -3,9 +3,9 @@ import os
 import glob
 import cv2
 import mahotas as mt
+
 from typing import Callable, List, NoReturn
 from sklearn.svm import LinearSVC
-
 
 def normalize_image(image: any) -> any:
     grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

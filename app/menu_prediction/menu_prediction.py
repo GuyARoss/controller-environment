@@ -2,21 +2,21 @@
 import cv2
 from typing import NoReturn, List
 
-from model import Model
-from utils import average_prediction
+from menu_prediction.model import Model
+from menu_prediction.utils import average_prediction
 
-def predict_frame(model: any, frame: any, predictions: List[str] = []) -> str:
-    current_frame_prediction = model.predict(frame)
+def predict_frame(in_model: any, frame: any, predictions: List[str] = []) -> str:
+    current_frame_prediction = in_model.predict(frame)
 
     predictions.append(current_frame_prediction)
     if len(predictions) >= 20:
         predictions.pop(1)
 
-    return average_prediction(predictions)
+    return average_prediction(predictions, limit=1)
 
 def train_model() -> Model:
     model = Model()
-    model.train('../../menu_dataset/training')
+    model.train('../menu_dataset/training')
 
     return model
 
