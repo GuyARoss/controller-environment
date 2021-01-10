@@ -12,7 +12,7 @@ def predict_frame(in_model: any, frame: any, predictions: List[str] = []) -> str
     if len(predictions) >= 20:
         predictions.pop(1)
 
-    return average_prediction(predictions, limit=1)
+    return average_prediction(predictions)
 
 def train_model() -> Model:
     model = Model()
