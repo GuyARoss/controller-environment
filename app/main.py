@@ -27,8 +27,6 @@ def main() -> NoReturn:
     predictions: List[str] = []
     last_gameplay_action = None
 
-    controller = 
-
     while True:
         frame = cap.read()[1]
 
@@ -37,8 +35,19 @@ def main() -> NoReturn:
             gameplay_action, gameplay_action_handler = select_action(last_gameplay_action)
             last_gameplay_action = gameplay_action
 
-            gameplay_action_handler(controller)
+            # gameplay_action_handler(controller)
         else:
             last_gameplay_action = None
 
-        frame = cv2.putText(frame, frame_prediction, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        frame = cv2.putText(frame, f'predicted_menu: {frame_prediction}', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+        frame = cv2.putText(frame, f'last_action: {str(last_gameplay_action)}', (50, 55), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+
+        if cv2.waitKey(1) == 27:
+            break
+
+        cv2.imshow('output', frame)
+        
+    cv2.destroyAllWindows()
+
+if __name__ == '__main__':
+    main()
