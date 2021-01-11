@@ -10,14 +10,13 @@ class GameplayAction(IntEnum):
     OP_2 = 1
     OP_3 = 2
 
-
 def ActionOP_1(controller: Controller) -> NoReturn:
     '''
     Operation 1: left stick forward 2s
     '''
     controller.right_thumbstick.center()
     controller.left_thumbstick.linear_min()
-    time.sleep(2)
+    time.sleep(3)
 
 
 def ActionOP_2(controller: Controller) -> NoReturn:
@@ -57,6 +56,9 @@ def select_action(last_action: GameplayAction) -> (GameplayAction, Callable[[Con
     
     return (new_action, actions[new_action])
     
+def call_select_option(last_action: GameplayAction, controller: any) -> GameplayAction:
+    selected, handler = select_action(last_action)
+    if handler != None: 
+        handler(controller)
 
-
-    
+    return selected
