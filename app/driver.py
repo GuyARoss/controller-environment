@@ -29,7 +29,7 @@ class Thumbstick:
 		self.control = control_type(pin)
 
 	def center(self):
-		self.control.apply(0, 0)
+		self.control.apply(0, 300)
 
 	def linear_min(self):
 		self.control.apply(0, 120)
@@ -42,13 +42,32 @@ class Controller:
 		self.left_thumbstick = left_thumbstick
 		self.right_thumbstick = right_thumbstick
 
+	def calibrate(self):
+		# left pre
+		self.left_thumbstick.center()
+		time.sleep(1)
+		self.left_thumbstick.linear_min()
+		time.sleep(1)
+		self.left_thumbstick.linear_max()
+		time.sleep(1)
+		self.left_thumbstick.center()
+		time.sleep(1)
+
+		# right pre
+		self.right_thumbstick.center()
+		time.sleep(1)
+		self.right_thumbstick.linear_max()
+		time.sleep(1)
+		self.right_thumbstick.linear_min()
+		time.sleep(1)
+		self.right_thumbstick.center()
+		time.sleep(1)
+
 if __name__ == '__main__':
-	while True:
-		control = PCA9685(12)
-		stick_1 = Thumbstick(control)
-		stick_1.linear_min()
-		time.sleep(1)
-		stick_1.center()
-		time.sleep(1)		
-		stick_1.linear_max()
-		time.sleep(1)
+	left_stick = Thumbstick(pin=13)
+	right_stick = Thumbstick(pin=12)
+
+	controller = Controller(left_thumbstick=left_stick, right_thumbstick=right_stick)
+	controller.calibrate()
+	
+

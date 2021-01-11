@@ -1,0 +1,463 @@
+INFO:root:started gameplay worker
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
+ERROR:root:last_gameplay_action: empty queue
+INFO:root:frame_prediction: gameplay
