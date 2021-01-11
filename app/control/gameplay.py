@@ -16,7 +16,7 @@ def ActionOP_1(controller: Controller) -> NoReturn:
     Operation 1: left stick forward 2s
     '''
     controller.right_thumbstick.center()
-    controller.left_thumbstick.linear_max()
+    controller.left_thumbstick.linear_min()
     time.sleep(2)
 
 
@@ -36,10 +36,13 @@ def ActionOP_3(controller: Controller) -> NoReturn:
     controller.right_thumbstick.linear_max() if rnd >= 50 else controller.right_thumbstick.linear_min()
     time.sleep(1)
 
+def Action_Pre(controller: Controller) -> NoReturn:
+    controller.left_thumbstick.center()
+    controller.right_thumbstick.center()
+
+    ActionOP_1(controller)
+
 def select_action(last_action: GameplayAction) -> (GameplayAction, Callable[[Controller], NoReturn]):
-    '''
-    this code is really bad... 
-    '''
     actions = {
         GameplayAction.OP_1: ActionOP_1,
         GameplayAction.OP_2: ActionOP_2,
@@ -47,7 +50,7 @@ def select_action(last_action: GameplayAction) -> (GameplayAction, Callable[[Con
     }
 
     if last_action is None:
-        return (GameplayAction.OP_1, ActionOP_1)
+        return (GameplayAction.OP_1, Action_Pre)
 
     iter_action = int(last_action) + 1
     new_action = GameplayAction.OP_1 if iter_action > 2 else GameplayAction(iter_action)

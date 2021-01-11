@@ -32,25 +32,28 @@ async def gameplay_worker(action_queue, gameplay_queue, controller) -> NoReturn:
     action = await action_queue.get()
 
     while True:
+        print(action)
         if action is Action.NONE:
             continue
 
         gameplay_action, gameplay_action_handler = select_action(last_gameplay_action)
+        gameplay_action_handler(controller)
+        last_gameplay_action = gameplay_action
+
+        print('gameplay_action', gameplay_action)
         await gameplay_queue.put(gameplay_action)
 
-        gameplay_action_handler(controller)
-
 async def main() -> NoReturn:
-    menu_detection_model = train_model()
-    cap = setup_cap()
+    # menu_detection_model = train_model()
+    # cap = setup_cap()
     controller = setup_controller()
 
     predictions: List[str] = []
 
     gameplay_queue = asyncio.Queue()
 
-    # @@todo: when we introuduce more action handlers to our pool, 
-    # we will need to change this to a priority queue
+    # @@todo: when we introuduce more action handlers to our pool
+    # we will need to prob want to change this to a priority queue
     action_queue = asyncio.Queue()
 
     gameplay_task = asyncio.create_task(gameplay_worker(action_queue, gameplay_queue, controller))
@@ -79,8 +82,8 @@ async def main() -> NoReturn:
         
     cv2.destroyAllWindows()
 
-    gameplay_task.cancel()
-    await asyncio.gather(*[gameplay_task], return_exceptions=False)
+    # gameplay_task.cancel()
+    # await asyncio.gather(*[gameplay_task], return_exceptions=False)
 
 if __name__ == '__main__':
     asyncio.run(main())

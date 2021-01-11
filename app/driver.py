@@ -42,28 +42,32 @@ class Controller:
 		self.left_thumbstick = left_thumbstick
 		self.right_thumbstick = right_thumbstick
 
+	def calibrate(self):
+		# left pre
+		self.left_thumbstick.center()
+		time.sleep(1)
+		self.left_thumbstick.linear_min()
+		time.sleep(1)
+		self.left_thumbstick.linear_max()
+		time.sleep(1)
+		self.left_thumbstick.center()
+		time.sleep(1)
+
+		# right pre
+		self.right_thumbstick.center()
+		time.sleep(1)
+		self.right_thumbstick.linear_max()
+		time.sleep(1)
+		self.right_thumbstick.linear_min()
+		time.sleep(1)
+		self.right_thumbstick.center()
+		time.sleep(1)
+
 if __name__ == '__main__':
 	left_stick = Thumbstick(pin=13)
 	right_stick = Thumbstick(pin=12)
 
 	controller = Controller(left_thumbstick=left_stick, right_thumbstick=right_stick)
-	# left pre
-	controller.left_thumbstick.center()
-	time.sleep(1)
-	controller.left_thumbstick.linear_max()
-	time.sleep(1)
-	controller.left_thumbstick.linear_min()
-	time.sleep(1)
-	controller.left_thumbstick.center()
-	time.sleep(1)
-
-	# right pre
-	controller.right_thumbstick.center()
-	time.sleep(1)
-	controller.right_thumbstick.linear_max()
-	time.sleep(1)
-	controller.right_thumbstick.linear_min()
-	time.sleep(1)
-	controller.right_thumbstick.center()
-	time.sleep(1)
+	controller.calibrate()
+	
 
