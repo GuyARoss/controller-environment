@@ -6,7 +6,7 @@ import logging
 from enum import IntEnum
 from typing import NoReturn 
 from menu_prediction.menu_prediction import predict_frame, train_model
-from control.gameplay import call_select_option
+from control.gameplay import select_action
 from driver import Controller, Thumbstick
 
 logging.basicConfig(filename="log.txt", level=logging.INFO)
