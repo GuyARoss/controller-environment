@@ -2,7 +2,7 @@
 Over-engineered Halo 5 Guardians bot because no one wants to grind 100+ hours for a piece of armor. 
 
 ## How does this work?
-Basically we simulate gameplay by first detecting what menu the player is on with the video capture card, then run a set of procedures dependant on which screen is detected.
+Basically we simulate gameplay by first detecting what menu the player is on, then run a set of procedures dependant on which screen is detected.
 
 ![pic of the rig](docs/controller.png)
 ## Build Requirements
