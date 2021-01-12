@@ -11,6 +11,8 @@ from driver import Controller, Thumbstick
 
 logging.basicConfig(filename="log.txt", level=logging.INFO)
 
+DISABLE_DETECTION = True
+
 def setup_cap() -> any:
     cap = cv2.VideoCapture(0)
     cap.set(3, 720)
@@ -41,9 +43,9 @@ def main() -> NoReturn:
     while True:
         frame = cap.read()[1]
 
-        frame_prediction = predict_frame(menu_detection_model, frame, predictions=predictions, )
+        frame_prediction = "gameplay" if DISABLE_DETECTION == True else predict_frame(menu_detection_model, frame, predictions=predictions)
 
-        if frame_prediction == "gameplay":
+        if frame_prediction == "gameplay!":
             gameplay_action, gameplay_action_handler = select_action(last_gameplay_action)
             if gameplay_action_handler is not None:
                 # @@performance: this runs horrible and is blocking
