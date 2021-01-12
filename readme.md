@@ -1,5 +1,7 @@
 # SR-152
-Over-engineered Halo 5 Guardians bot because no one wants to grind 100+ hours for a piece of armor. 
+Over-engineered Halo 5 Guardians bot.
+
+__disclaimer__: PLEASE do not actually use this to reach sr-152, this repo should be used for educational purposes only. 
 
 ## How does this work?
 Basically we simulate gameplay by first detecting what menu the player is on, then run a set of procedures depending on which screen is detected.
