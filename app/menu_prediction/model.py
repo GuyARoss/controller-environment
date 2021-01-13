@@ -3,6 +3,7 @@ import os
 import glob
 import cv2
 import mahotas as mt
+from joblib import dump, load
 
 from typing import Callable, List, NoReturn
 from sklearn.svm import LinearSVC
@@ -22,16 +23,25 @@ class Model:
     normal_img_fn: Callable[[any], any]
     extract_features_fn: Callable[[any], any]
     svc: any
+    file_path: str
 
     def __init__(
         self,
         normal_img_fn: Callable[[any], any] = normalize_image,
         extract_features_fn: Callable[[any], any] = haralick_features,
+        file_path: str = "./menu-prediction.joblib"
     ) -> NoReturn:
         self.normal_img_fn = normal_img_fn
         self.extract_features_fn = extract_features_fn
+        self.file_pth = file_path
 
-    def train(self, train_path: str) -> NoReturn:
+    def save(self):
+        dump(self.svc, self.file_path)
+
+    def load(self):
+        self.svc = load(self.file_path)
+
+    def train(self, train_path: str, should_save: bool = True) -> NoReturn:
         assert train_path != None, "train path should not be empty"
 
         cates = os.listdir(train_path)
@@ -51,6 +61,9 @@ class Model:
 
         self.svc = LinearSVC(random_state=5, dual=False)
         self.svc.fit(feats, lbls)
+        
+        if should_save:
+            self.save()
 
     def predict(self, img: any) -> str:
         normal_img = self.normal_img_fn(img)

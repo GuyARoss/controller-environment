@@ -1,5 +1,5 @@
 # SR-152
-Over-engineered Halo 5 Guardians bot.
+Over-engineered Halo 5 Guardians bot. 
 
 __disclaimer__: PLEASE do not actually use this to reach sr-152, this repo should be used for educational purposes only. 
 
@@ -26,7 +26,6 @@ Basically we simulate gameplay by first detecting what menu the player is on, th
 
 ## Run in barebones mode
 Barebones mode makes the assumption that a dedicated hardware device for video-in is not available which basically enables the same set of gameplay procedures to run continuously. 
-
 
 ## 3D Models
 I need to clean these up first, then I will link them on here

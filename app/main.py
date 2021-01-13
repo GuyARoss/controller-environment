@@ -2,37 +2,24 @@
 import cv2
 import time
 import logging
+import argparse
 
-from enum import IntEnum
 from typing import NoReturn 
+
 from menu_prediction.menu_prediction import predict_frame, train_model
+from menu_prediction.model import Model
+
 from control.gameplay import select_action
 from driver import Controller, Thumbstick
+from setup import setup_cap, setup_controller
+from gameplay_action import Action
 
 logging.basicConfig(filename="log.txt", level=logging.INFO)
 
-DISABLE_DETECTION = True
+def main(disable_menu_detection: bool, should_train: bool) -> NoReturn:
+    menu_detection_model = Model()
+    menu_detection_model.load() if not should_train else menu_detection_model.train()
 
-def setup_cap() -> any:
-    cap = cv2.VideoCapture(0)
-    cap.set(3, 720)
-    cap.set(4,480)
-    cap.set(5, 15)
-
-    return cap
-
-def setup_controller() -> any:
-    left_thumb = Thumbstick(pin=13)
-    right_thumb = Thumbstick(pin=12)
-
-    return Controller(left_thumbstick=left_thumb, right_thumbstick=right_thumb)
-
-class Action(IntEnum):
-    NONE = 0
-    GAMEPLAY = 1
-
-def main() -> NoReturn:
-    menu_detection_model = train_model()
     cap = setup_cap()
     controller = setup_controller()
 
@@ -43,18 +30,10 @@ def main() -> NoReturn:
     while True:
         frame = cap.read()[1]
 
-        frame_prediction = "gameplay" if DISABLE_DETECTION == True else predict_frame(menu_detection_model, frame, predictions=predictions)
-
-        if frame_prediction == "gameplay!":
-            gameplay_action, gameplay_action_handler = select_action(last_gameplay_action)
-            if gameplay_action_handler is not None:
-                # @@performance: this runs horrible and is blocking
-                print(gameplay_action_handler)
-                gameplay_action_handler(controller)
-
-            last_gameplay_action = gameplay_action
-        else:
-            last_gameplay_action = None
+        frame_prediction = "gameplay" if disable_menu_detection == True else predict_frame(menu_detection_model, frame, predictions=predictions)
+        
+        # write frame_prediction to named pipe
+        # read named pipe for last_action
 
         frame = cv2.putText(frame, f'predicted_menu: {frame_prediction}', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
         frame = cv2.putText(frame, f'last_action: {str(last_gameplay_action)}', (50, 72), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
@@ -66,5 +45,14 @@ def main() -> NoReturn:
         
     cv2.destroyAllWindows()
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__':    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--nopredict', '--nopredict', help="set to true if menu prediction should be disabled", type=bool, default=False)
+    parser.add_argument('--t', '--train', help="set true if the training process should be ran", type=bool, default=False)
+
+    args = parser.parse_args()
+
+    main(
+        disable_menu_detection=args.nopredict,
+        should_train=args.train,
+    )
