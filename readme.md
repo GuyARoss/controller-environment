@@ -26,6 +26,7 @@ Basically we simulate gameplay by first detecting what menu the player is on, th
 
 ## Run in barebones mode
 Barebones mode makes the assumption that a dedicated hardware device for video-in is not available which basically enables the same set of gameplay procedures to run continuously. 
+You can enable that mode by using the flag `--nopredict=true` when starting the application
 
 ## 3D Models
 I need to clean these up first, then I will link them on here
