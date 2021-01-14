@@ -17,6 +17,7 @@ def setup_cap() -> any:
     cap = cv2.VideoCapture(0)
     cap.set(3, 720)
     cap.set(4,480)
+
     cap.set(5, 15)
 
     return cap
@@ -24,8 +25,9 @@ def setup_cap() -> any:
 def setup_controller() -> any:
     left_thumb = Thumbstick(pin=13)
     right_thumb = Thumbstick(pin=12)
+    y_btn = Thumbstick(pin=14)
 
-    return Controller(left_thumbstick=left_thumb, right_thumbstick=right_thumb)
+    return Controller(left_thumbstick=left_thumb, right_thumbstick=right_thumb, y_btn=y_btn)
 
 class Action(IntEnum):
     NONE = 0
@@ -39,13 +41,19 @@ def main() -> NoReturn:
     predictions: List[str] = []
 
     last_gameplay_action = None
+    pause_predictions = False
 
     while True:
         frame = cap.read()[1]
 
-        frame_prediction = "gameplay" if DISABLE_DETECTION == True else predict_frame(menu_detection_model, frame, predictions=predictions)
+        frame_prediction = "!gameplay" if DISABLE_DETECTION == True else predict_frame(menu_detection_model, frame, predictions=predictions)
 
-        if frame_prediction == "gameplay!":
+        if cv2.waitKey == ord('f'):
+            pause_predictions = False
+        if cv2.waitKey == ord('p'):
+            pause_predictions = True
+
+        if frame_prediction == "gameplay" and not pause_predictions:
             gameplay_action, gameplay_action_handler = select_action(last_gameplay_action)
             if gameplay_action_handler is not None:
                 # @@performance: this runs horrible and is blocking
@@ -54,7 +62,7 @@ def main() -> NoReturn:
 
             last_gameplay_action = gameplay_action
         else:
-            last_gameplay_action = None
+            last_gameplay_action = None      
 
         frame = cv2.putText(frame, f'predicted_menu: {frame_prediction}', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
         frame = cv2.putText(frame, f'last_action: {str(last_gameplay_action)}', (50, 72), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
