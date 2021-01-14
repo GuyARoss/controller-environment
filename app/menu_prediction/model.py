@@ -33,7 +33,7 @@ class Model:
     ) -> NoReturn:
         self.normal_img_fn = normal_img_fn
         self.extract_features_fn = extract_features_fn
-        self.file_pth = file_path
+        self.file_path = file_path
 
     def save(self):
         dump(self.svc, self.file_path)
