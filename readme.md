@@ -2,7 +2,7 @@
 
 __disclaimer__: PLEASE do not use this in live games, this repo should be used for educational purposes only. 
 
-![pic of the rig](docs/controller.png)
+![pic of the rig](images/20210111_231910.jpg)
 ## Build Requirements
 - *RaspberryPi 4 Model B (or greater)
 - *3D Printer
