@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.8
+import argparse
 from typing import NoReturn
 
 from agent_framework.ipc.agent import AgentIPC
