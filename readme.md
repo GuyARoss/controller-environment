@@ -1,4 +1,4 @@
-# xbox controller agent hardware environment 
+# xbox controller hardware environment 
 
 __disclaimer__: PLEASE do not use this in live games, this repo should be used for educational purposes only. 
 
