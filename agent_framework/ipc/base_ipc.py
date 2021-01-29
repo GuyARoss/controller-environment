@@ -4,11 +4,25 @@ import sys
 import struct
 
 from typing import Callable, NoReturn
+from abc import ABC, abstractmethod
 
-class BaseIPC:
+class IPC_Instance(ABC):
+    @abstractmethod
+    def __init__(self, name: str):
+        pass
+
+    @abstractmethod
+    def write(self, data: str):
+        pass
+
+    @abstractmethod
+    def read(self) -> str:
+        pass
+
+class BaseIPC(IPC_Instance):
     instance = None
 
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> NoReturn:
         if not os.path.exists('./temp'):
             os.makedirs('./temp')
 
