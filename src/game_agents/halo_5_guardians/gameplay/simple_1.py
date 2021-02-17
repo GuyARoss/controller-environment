@@ -3,7 +3,7 @@ import random
 from typing import List, NoReturn, Callable
 from enum import IntEnum
 
-from driver import Controller
+from agent_framework.control.controller import Controller
 
 class GameplayAction(IntEnum):
     OP_1 = 0

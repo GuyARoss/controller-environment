@@ -6,18 +6,15 @@ import argparse
 
 from typing import NoReturn 
 
-from menu_prediction.menu_prediction import predict_frame, train_model
-from menu_prediction.model import Model
-from setup import setup_cap
-
-from gameplay_action import Action
-
 logging.basicConfig(filename="log.txt", level=logging.INFO)
 
-def main(no_loop: bool) -> NoReturn:
-    cap = setup_cap()
+def main() -> NoReturn:
+    cap = cv2.VideoCapture(0)
+    cap.set(3, 720)
+    cap.set(4,480)
+    cap.set(5, 25)
 
-    while not no_loop:
+    while True:
         frame = cap.read()[1]
         # @@ save frame
 
@@ -31,12 +28,5 @@ def main(no_loop: bool) -> NoReturn:
         
     cv2.destroyAllWindows()
 
-if __name__ == '__main__':    
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--noloop', '--noloop', help="set true if the main process loop should not be ran", type=bool, default=False)
-
-    args = parser.parse_args()
-
-    main(
-        no_loop=args.noloop,
-    )
+if __name__ == '__main__':
+    main()

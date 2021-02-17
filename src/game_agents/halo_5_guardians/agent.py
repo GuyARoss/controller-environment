@@ -1,4 +1,6 @@
 from agent_framework.agent import Agent_Instance
+from agent_framework.ipc.agent import AgentIPC
+
 from game_agents.halo_5_guardians.menu_prediction.model import Model
 from game_agents.halo_5_guardians.gameplay.simple_1 import select_action
 

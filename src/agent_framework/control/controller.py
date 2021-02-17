@@ -43,7 +43,6 @@ class Controller:
 		self.right_thumbstick = right_thumbstick
 
 	def calibrate(self):
-		# left pre
 		self.left_thumbstick.center()
 		time.sleep(1)
 		self.left_thumbstick.linear_min()
@@ -53,7 +52,6 @@ class Controller:
 		self.left_thumbstick.center()
 		time.sleep(1)
 
-		# right pre
 		self.right_thumbstick.center()
 		time.sleep(1)
 		self.right_thumbstick.linear_max()
