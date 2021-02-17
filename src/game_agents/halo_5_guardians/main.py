@@ -5,8 +5,6 @@ from typing import NoReturn
 from agent_framework.ipc.agent import AgentIPC
 
 def main(should_train: bool) -> NoReturn:
-    menu_detection_model = Model(file_path="../bin/menu-prediction.joblib")
-    menu_detection_model.load() if not should_train else menu_detection_model.train('../menu_dataset/training')
 
     # @@todo: read the current frame, make prediction, do controller action.
 
