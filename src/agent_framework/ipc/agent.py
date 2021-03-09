@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.8
-from agent_framework.ipc.base_ipc import IPC_Instance
+from agent_framework.ipc.base_ipc import IPC_Instance, BaseIPC
 
-class AgentIPC:
+class AgentIPC():
     '''
     agent ipc data properties
     - last processed: datetime the last frame was processed
@@ -9,10 +9,10 @@ class AgentIPC:
     - last action: controllerEventType
     '''
 
-    def __init__(self, ipc_type: IPC_Instance):
+    def __init__(self, ipc_type: IPC_Instance = BaseIPC):
         self.ipc_instance = ipc_type(name='agent_ipc')
 
-    def update_properties(self, agent_stats: dict, action: str):
+    def transmit_frame(self, action: str, agent_stats: dict ):
         pass
 
     def read(self):
