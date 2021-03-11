@@ -23,7 +23,7 @@
 2. Clone this repo on your raspberry pi
 3. Ensure python3.8 or greater is installed on your machine
 4. Install the project dependencies
-5. Run the code with `python main.py` in the `/app` directory.
+5. Run the code with `python main.py` in the `/src` directory.
 6. Profit
 
 ## 3D Models
