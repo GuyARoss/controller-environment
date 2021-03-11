@@ -1,6 +1,8 @@
 # xbox controller hardware environment 
+>over-engineered xbox one controller hardware environment + 3d printed rig
 
-__disclaimer__: PLEASE do not use this in live games, this repo should be used for educational purposes only. 
+
+### PLEASE do not use this in live games, this repo should be used for educational purposes only. 
 
 ![pic of the rig](images/20210111_231910.jpg)
 ## Build Requirements
